@@ -1,0 +1,533 @@
+$pc = 0
+Operacao: addi 4, 0, 5
+Conteudo dos registradores:
+  Registrador 4: 5
+  Registrador 0: 0
+
+$pc = 1
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 1
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 254
+  Registrador 29: 254
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 1
+  Registrador 29: 254
+Conteudo da memoria:
+  RAM[255]: 1
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 5
+  Registrador 29: 254
+Conteudo da memoria:
+  RAM[254]: 5
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 4: 5
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 0: 0
+  Novo $pc: 10
+
+$pc = 11
+Operacao: addi 4, 4, -1
+Conteudo dos registradores:
+  Registrador 4: 4
+  Registrador 4: 4
+
+$pc = 12
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 252
+  Registrador 29: 252
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 252
+Conteudo da memoria:
+  RAM[253]: 12
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 4
+  Registrador 29: 252
+Conteudo da memoria:
+  RAM[252]: 4
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 4: 4
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 0: 0
+  Novo $pc: 10
+
+$pc = 11
+Operacao: addi 4, 4, -1
+Conteudo dos registradores:
+  Registrador 4: 3
+  Registrador 4: 3
+
+$pc = 12
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 250
+  Registrador 29: 250
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 250
+Conteudo da memoria:
+  RAM[251]: 12
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 3
+  Registrador 29: 250
+Conteudo da memoria:
+  RAM[250]: 3
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 4: 3
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 0: 0
+  Novo $pc: 10
+
+$pc = 11
+Operacao: addi 4, 4, -1
+Conteudo dos registradores:
+  Registrador 4: 2
+  Registrador 4: 2
+
+$pc = 12
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 248
+  Registrador 29: 248
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 248
+Conteudo da memoria:
+  RAM[249]: 12
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 2
+  Registrador 29: 248
+Conteudo da memoria:
+  RAM[248]: 2
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 4: 2
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 0: 0
+  Novo $pc: 10
+
+$pc = 11
+Operacao: addi 4, 4, -1
+Conteudo dos registradores:
+  Registrador 4: 1
+  Registrador 4: 1
+
+$pc = 12
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 246
+  Registrador 29: 246
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 246
+Conteudo da memoria:
+  RAM[247]: 12
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 1
+  Registrador 29: 246
+Conteudo da memoria:
+  RAM[246]: 1
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 4: 1
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 0
+  Registrador 0: 0
+  Novo $pc: 10
+
+$pc = 11
+Operacao: addi 4, 4, -1
+Conteudo dos registradores:
+  Registrador 4: 0
+  Registrador 4: 0
+
+$pc = 12
+Operacao: jal 0x00100003
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 3
+
+$pc = 3
+Operacao: addi 29, 29, -8
+Conteudo dos registradores:
+  Registrador 29: 244
+  Registrador 29: 244
+
+$pc = 4
+Operacao: sw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 244
+Conteudo da memoria:
+  RAM[245]: 12
+
+$pc = 5
+Operacao: sw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 0
+  Registrador 29: 244
+Conteudo da memoria:
+  RAM[244]: 0
+
+$pc = 6
+Operacao: slti 8, 4, 1
+Conteudo dos registradores:
+  Registrador 8: 1
+  Registrador 4: 0
+
+$pc = 7
+Operacao: beq 8, 0, 3
+Conteudo dos registradores:
+  Registrador 8: 1
+  Registrador 0: 0
+  Novo $pc: 7
+
+$pc = 8
+Operacao: addi 2, 0, 1
+Conteudo dos registradores:
+  Registrador 2: 1
+  Registrador 0: 0
+
+$pc = 9
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 246
+  Registrador 29: 246
+
+$pc = 10
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 12
+
+$pc = 13
+Operacao: lw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 1
+  Registrador 29: 246
+
+$pc = 14
+Operacao: lw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 246
+
+$pc = 15
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 248
+  Registrador 29: 248
+
+$pc = 16
+Operacao: mult 4, 2
+Conteudo dos registradores:
+  Registrador HI: 0
+  Registrador LO: 1
+  Registrador 4: 1
+  Registrador 2: 1
+
+$pc = 17
+Operacao: mflo 2
+Conteudo dos registradores:
+  Registrador LO: 1
+  Registrador 2: 1
+
+$pc = 18
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 12
+
+$pc = 13
+Operacao: lw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 2
+  Registrador 29: 248
+
+$pc = 14
+Operacao: lw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 248
+
+$pc = 15
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 250
+  Registrador 29: 250
+
+$pc = 16
+Operacao: mult 4, 2
+Conteudo dos registradores:
+  Registrador HI: 0
+  Registrador LO: 2
+  Registrador 4: 2
+  Registrador 2: 1
+
+$pc = 17
+Operacao: mflo 2
+Conteudo dos registradores:
+  Registrador LO: 2
+  Registrador 2: 2
+
+$pc = 18
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 12
+
+$pc = 13
+Operacao: lw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 3
+  Registrador 29: 250
+
+$pc = 14
+Operacao: lw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 250
+
+$pc = 15
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 252
+  Registrador 29: 252
+
+$pc = 16
+Operacao: mult 4, 2
+Conteudo dos registradores:
+  Registrador HI: 0
+  Registrador LO: 6
+  Registrador 4: 3
+  Registrador 2: 2
+
+$pc = 17
+Operacao: mflo 2
+Conteudo dos registradores:
+  Registrador LO: 6
+  Registrador 2: 6
+
+$pc = 18
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 12
+
+$pc = 13
+Operacao: lw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 4
+  Registrador 29: 252
+
+$pc = 14
+Operacao: lw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 12
+  Registrador 29: 252
+
+$pc = 15
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 254
+  Registrador 29: 254
+
+$pc = 16
+Operacao: mult 4, 2
+Conteudo dos registradores:
+  Registrador HI: 0
+  Registrador LO: 24
+  Registrador 4: 4
+  Registrador 2: 6
+
+$pc = 17
+Operacao: mflo 2
+Conteudo dos registradores:
+  Registrador LO: 24
+  Registrador 2: 24
+
+$pc = 18
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 12
+  Novo $pc: 12
+
+$pc = 13
+Operacao: lw 4, 0(29)
+Conteudo dos registradores:
+  Registrador 4: 5
+  Registrador 29: 254
+
+$pc = 14
+Operacao: lw 31, 4(29)
+Conteudo dos registradores:
+  Registrador 31: 1
+  Registrador 29: 254
+
+$pc = 15
+Operacao: addi 29, 29, 8
+Conteudo dos registradores:
+  Registrador 29: 256
+  Registrador 29: 256
+
+$pc = 16
+Operacao: mult 4, 2
+Conteudo dos registradores:
+  Registrador HI: 0
+  Registrador LO: 120
+  Registrador 4: 5
+  Registrador 2: 24
+
+$pc = 17
+Operacao: mflo 2
+Conteudo dos registradores:
+  Registrador LO: 120
+  Registrador 2: 120
+
+$pc = 18
+Operacao: jr 31
+Conteudo dos registradores:
+  Registrador 31: 1
+  Novo $pc: 1
+
+$pc = 2
+Operacao: j 0x00100013
+Conteudo dos registradores:
+  Novo $pc: 19
+
+$pc = 19
+Operacao: add 10, 0, 2
+Conteudo dos registradores:
+  Registrador 10: 120
+  Registrador 0: 0
+  Registrador 2: 120
+
+$pc = 20
+Operacao: addi 2, 0, 1
+Conteudo dos registradores:
+  Registrador 2: 1
+  Registrador 0: 0
+
+$pc = 21
+Operacao: add 4, 0, 10
+Conteudo dos registradores:
+  Registrador 4: 120
+  Registrador 0: 0
+  Registrador 10: 120
+
+$pc = 22
+Operacao: syscall
+Conteudo dos registradores:
+  Registrador 2: 1
+  Registrador 4: 120
+
+$pc = 23
+Operacao: addi 2, 0, 10
+Conteudo dos registradores:
+  Registrador 2: 10
+  Registrador 0: 0
+
+$pc = 24
+Operacao: syscall
+Conteudo dos registradores:
+  Registrador 2: 10
+  Registrador 4: 120
+
